@@ -1,0 +1,17 @@
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview server.csproj.AssemblyReference.cache
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview server.csproj.SuggestedBindingRedirects.cache
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview server.exe.config
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview_server.AddChannel.resources
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview_server.EditChannel.resources
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview_server.EventPlazaAnimationEditor.resources
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview_server.EventPlazaCollisionEditor.resources
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview_server.EventPlazaEasyGraphicsImport.resources
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview_server.EventPlazaEditor.resources
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview_server.EventPlazaTilesetEditor.resources
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview_server.MainWindow.resources
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview_server.Properties.Resources.resources
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview server.csproj.GenerateResource.cache
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview server.AssemblyInfoInputs.cache
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview server.AssemblyInfo.cs
+C:\Users\ottse\Downloads\Satellaview-Libretro-master\Satellaview-Libretro-master\Satellaview server\Satellaview server\obj\Release\net48\Satellaview server.csproj.CoreCompileInputs.cache
