@@ -1,0 +1,160 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0-windows;net6.0-macos;net6.0</TargetFrameworks>
+    <Platforms>x64</Platforms>
+    <UseWindowsForms Condition="'$(TargetFramework)' == 'net6.0-windows'">true</UseWindowsForms>
+    <DefineConstants Condition="'$(TargetFramework)' == 'net6.0-macos'">MACOS</DefineConstants>
+    <DefineConstants Condition="'$(TargetFramework)' == 'net6.0'">LINUX</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="ChannelClass.cs" />
+    <Compile Update="EditChannel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditChannel.Designer.cs">
+      <DependentUpon>EditChannel.cs</DependentUpon>
+    </Compile>
+    <Compile Update="EventPlazaAnimationEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EventPlazaAnimationEditor.Designer.cs">
+      <DependentUpon>EventPlazaAnimationEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="EventPlazaCollisionEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EventPlazaCollisionEditor.Designer.cs">
+      <DependentUpon>EventPlazaCollisionEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="EventPlazaEasyGraphicsImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EventPlazaEasyGraphicsImport.Designer.cs">
+      <DependentUpon>EventPlazaEasyGraphicsImport.cs</DependentUpon>
+    </Compile>
+    <Compile Update="EventPlazaEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EventPlazaEditor.Designer.cs">
+      <DependentUpon>EventPlazaEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="EventPlazaTilesetEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EventPlazaTilesetEditor.Designer.cs">
+      <DependentUpon>EventPlazaTilesetEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FolderSelectDialog\FolderSelectDialog.cs" />
+    <Compile Update="FolderSelectDialog\Reflector.cs" />
+    <Compile Update="ResourceAccess.cs" />
+    <Compile Update="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Program.cs" />
+    <Compile Update="AddChannel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AddChannel.Designer.cs">
+      <DependentUpon>AddChannel.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Update="AddChannel.resx">
+      <DependentUpon>AddChannel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="EditChannel.resx">
+      <DependentUpon>EditChannel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="EventPlazaAnimationEditor.resx">
+      <DependentUpon>EventPlazaAnimationEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="EventPlazaCollisionEditor.resx">
+      <DependentUpon>EventPlazaCollisionEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="EventPlazaEasyGraphicsImport.resx">
+      <DependentUpon>EventPlazaEasyGraphicsImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="EventPlazaEditor.resx">
+      <DependentUpon>EventPlazaEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="EventPlazaTilesetEditor.resx">
+      <DependentUpon>EventPlazaTilesetEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Update="Resources\Data\bsxpalette.bin" />
+    <None Update="Resources\Data\bsxtiles.bin" />
+    <None Update="Resources\Data\bsxtileset.bin" />
+    <None Update="Resources\Data\bsxtilesetconfig.bin" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0-macos'">
+    <PackageReference Include="Microsoft.Maui" Version="6.0.100" />
+    <PackageReference Include="ObjCRuntime" Version="13.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="Images\bsxtileset.png" />
+    <Content Update="Images\icon.ico" />
+    <Content Update="Images\Mugshot\00.png" />
+    <Content Update="Images\Mugshot\01.png" />
+    <Content Update="Images\Mugshot\02.png" />
+    <Content Update="Images\Mugshot\03.png" />
+    <Content Update="Images\Mugshot\04.png" />
+    <Content Update="Images\Mugshot\05.png" />
+    <Content Update="Images\Mugshot\06.png" />
+    <Content Update="Images\Mugshot\07.png" />
+    <Content Update="Images\Mugshot\08.png" />
+    <Content Update="Images\Mugshot\09.png" />
+    <Content Update="Images\Mugshot\10.png" />
+    <Content Update="Images\Mugshot\11.png" />
+    <Content Update="Images\Mugshot\12.png" />
+    <Content Update="Images\Mugshot\13.png" />
+    <Content Update="Images\Mugshot\14.png" />
+    <Content Update="Images\Mugshot\15.png" />
+    <Content Update="Images\Mugshot\16.png" />
+    <Content Update="readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
