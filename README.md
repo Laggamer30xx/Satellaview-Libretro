@@ -1,4 +1,4 @@
-SatellaWave
+Satellaview for LibRetro ONLINE
 ========
 
 Compiling:
