@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net6.0-windows;net6.0-macos;net6.0</TargetFrameworks>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
     <Platforms>x64</Platforms>
-    <UseWindowsForms Condition="'$(TargetFramework)' == 'net6.0-windows'">true</UseWindowsForms>
-    <DefineConstants Condition="'$(TargetFramework)' == 'net6.0-macos'">MACOS</DefineConstants>
-    <DefineConstants Condition="'$(TargetFramework)' == 'net6.0'">LINUX</DefineConstants>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Images\icon.ico</ApplicationIcon>
@@ -21,6 +21,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Resources.Extensions" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="ChannelClass.cs" />
@@ -125,10 +126,6 @@
     <None Update="Resources\Data\bsxtileset.bin" />
     <None Update="Resources\Data\bsxtilesetconfig.bin" />
   </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0-macos'">
-    <PackageReference Include="Microsoft.Maui" Version="6.0.100" />
-    <PackageReference Include="ObjCRuntime" Version="13.0.0" />
-  </ItemGroup>
   <ItemGroup>
     <None Update="App.config" />
   </ItemGroup>
@@ -155,5 +152,8 @@
     <Content Update="readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Resources.Extensions" Version="6.0.0" />
   </ItemGroup>
 </Project>
